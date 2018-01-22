@@ -306,8 +306,8 @@
             <h3 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h3><p>This is my and my girlfriend’s blog.</p>
 <p>I am a PhD candidate and she is a programmer.</p>
 <p>I currently focus on operator algebra and she focuses on action recognition.</p>
-<h3 id="LaTeX-Test"><a href="#LaTeX-Test" class="headerlink" title="LaTeX Test"></a>LaTeX Test</h3><p>If <span>$A \subset B$</span><!-- Has MathJax -->, then <span>$A \oplus C \subset B \oplus C$</span><!-- Has MathJax -->.</p>
-<span>$0 \to J \oplus \mathrm{C}^{*} (G) \to \mathrm{C}^{*} (G) \oplus \mathrm{C}^{*} (G) \to \mathrm{C}_{\lambda}^{*} (G) \oplus \mathrm{C}^{*} (G) \to 0$</span><!-- Has MathJax -->
+<h3 id="LaTeX-Test"><a href="#LaTeX-Test" class="headerlink" title="LaTeX Test"></a>LaTeX Test</h3><p>If $A \subset B$, then $A \otimes C \subset B \otimes C$.</p>
+<p>$$0 \to J \oplus \mathrm{C}^{<em>} (G) \to \mathrm{C}^{</em>} (G) \oplus \mathrm{C}^{<em>} (G) \to \mathrm{C}_{\lambda}^{</em>} (G) \oplus \mathrm{C}^{*} (G) \to 0$$</p>
 
           
         
@@ -690,24 +690,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -760,6 +743,45 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+  
+
 
   
 
